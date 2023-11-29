@@ -1,0 +1,30 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Juego de la Serpiente</title>
+</head>
+<body>
+  <div id="game-container">
+    <div id="game-info">
+      <h1>Juego de la Serpiente</h1>
+      <p>¡Controla la serpiente y trata de comer las manzanas!</p>
+      <label for="speed-selector">Complejidad:</label>
+      <select id="speed-selector" onchange="changeSpeed()">
+        <option value="200">Fácil</option>
+        <option value="150">Normal</option>
+        <option value="100">Difícil</option>
+      </select>
+      <div id="score">Puntuación: 0</div>
+    </div>
+    <div id="game-board"></div>
+    <div id="game-over-message"></div>
+    <a href="instrucciones.html">Ver instrucciones</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
